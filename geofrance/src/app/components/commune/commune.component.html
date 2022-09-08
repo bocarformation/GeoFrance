@@ -1,0 +1,21 @@
+<section class="bg-light p-5 rounded">
+
+<app-departement-table 
+        [departements]="departements"
+        [departementsIsLoading]="departementsIsLoading"
+        [departementsIsLoaded]="departementsIsLoaded"
+        (loadDepartements)="loadDepartements()"
+        (loadCommunes)="loadCommunes($event)"
+        >
+</app-departement-table>
+
+<hr class="m-5">
+
+<app-commune-table
+[communes]="communes"
+[communesIsLoading]="communesIsLoading"
+[communesIsLoaded]="communesIsLoaded">
+</app-commune-table>
+
+
+</section>
